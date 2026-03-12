@@ -44,11 +44,26 @@ reverse_numbers = [
 list_ask=input("Впишіть, який список вивести: парні, непарні або список навиворіт: ")
 
 
-if list_ask=="парні":
-    print(even_numbers)
-elif list_ask=="непарні":
-    print(odd_numbers)
-elif list_ask=="список навиворіт" or list_ask=="навиворіт":
-    print(reverse_numbers)
+# if list_ask=="парні":
+#     print(even_numbers)
+# elif list_ask=="непарні":
+#     print(odd_numbers)
+# elif list_ask=="список навиворіт" or list_ask=="навиворіт":
+#     print(reverse_numbers)
+# else:
+#     print("Error")
+
+
+
+
+
+if list_ask == "парні":
+        print(list(range(2, 101, 2)))  
+
+elif list_ask == "непарні":
+    print(list(range(1, 101, 2)))  
+elif list_ask == "навиворіт":
+    print(list(range(100, 0, -1)))  
+
 else:
-    print("Error")
+    print("Невірний ввід, спробуйте ще раз.")
